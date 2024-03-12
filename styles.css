@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    margin: 0
+}
+
+.mySlides {
+    display: none
+}
+.mySlides p {
+    font-size: 12px;
+    /*padding: 0px 400px;*/
+    line-height: 20px;
+}
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    padding: 42px;
+    /* max-width: 1000px; */
+    position: relative;
+    margin: auto;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px 0px;
+    margin-right: 42px;
+    margin-top: -42px;
+    color: white;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    color: black;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+
+.mySlides {
+    text-align: center;
+}
+
+.mySlides .img-container img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    text-align: center;
+
+}
+
+
+.slideshow-container {
+    background-image: url(assets/img/testimonial/02.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    font-style: italic;
+    padding: 94px 22px;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.slideshow-container:before {
+    background: rgba(0, 0, 0, 0.7);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.slideshow-container h2{
+    text-transform: uppercase;
+    font-style: italic;
+}
+.slideshow-container .testimon-color
+{
+    color: red;
+}
+.mySlides .testim{
+    font-style: normal;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
